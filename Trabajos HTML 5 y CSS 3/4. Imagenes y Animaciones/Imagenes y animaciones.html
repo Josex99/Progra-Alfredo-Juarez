@@ -1,0 +1,102 @@
+<center><img src="imagen uno.jpg" alt="Logo del equipo Real Madrid"></center>
+<center><img src="imagen dos.jpg" alt="Estadio del Real Madrid"></center>
+<center><img src="imagen tres.jpg" alt="Equipación"></center>
+<center><img src="imagen cuatro.jpg" alt="Primer equipo"></center>
+<center><img src="imagen cinco.jpg" alt="Equipo actual"></center>
+
+<!--1-->
+<center><button id="color">Haz clic en mi</button></center>
+
+<style>
+#color {
+  transition-property: background-color;
+  transition-duration: 3s;
+}
+</style>
+
+<script>
+color.onclick = function() {
+  this.style.backgroundColor = 'red';
+};
+</script>
+<br>
+
+<!--2-->
+<center><button id="growing">Haz clic en mi</button></center>
+
+<style>
+#growing {
+  transition: font-size 3s, color 2s;
+}
+</style>
+
+<script>
+growing.onclick = function() {
+  this.style.fontSize = '36px';
+  this.style.color = 'red';
+};
+</script>
+<br>
+
+<!--3-->
+<center><button id="moving1">Haz clic en mí</button></center>
+
+<style>
+#moving1 {
+  transition: margin-left 1s;
+}
+</style>
+
+<script>
+let moved1 = false;
+document.getElementById('moving1').onclick = function() {
+  if (!moved1) {
+    this.style.marginLeft = '-100px';
+    moved1 = true;
+  } else {
+    this.style.marginLeft = '0';
+    moved1 = false;
+  }
+};
+</script>    
+<br>
+
+<!--4--> 
+<center><button id="fading">Haz clic en mí</button></center>
+
+<style>
+#fading {
+  transition: opacity 2s;
+}
+</style>
+
+<script>
+document.getElementById('fading').onclick = function() {
+  this.style.opacity = '0';
+};
+</script>
+<br>
+
+<!--5-->
+<center><button id="moving2">Haz clic en mí</button></center>
+
+<style>
+#moving2 {
+  transition: transform 2s;
+}
+</style>
+
+<script>
+let moved2 = false;
+document.getElementById('moving2').onclick = function() {
+  if (!moved2) {
+    this.style.transform = 'translateX(100px)';
+    moved2 = true;
+  } else {
+    this.style.transform = 'translateX(0)';
+    moved2 = false;
+  }
+};
+</script>
+<br>
+
